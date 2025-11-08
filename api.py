@@ -2,6 +2,10 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Bienvenue sur mon API de dog images !"
+
 @app.route('/api/images/search', methods=['GET'])
 def get_dog_image():
     data = [
