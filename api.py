@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Bienvenue sur API_Youcto !"
+    return "Bienvenue sur API_Youcto ! https://lieux-abandonn.onrender.com/api/images/search "
 
 @app.route('/api/images/search', methods=['GET'])
 def get_dog_image():
